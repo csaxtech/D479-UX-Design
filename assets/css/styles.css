@@ -62,12 +62,6 @@ video{
   text-shadow: 0 0 10px  #ECE3D4;
 }
 
-.main-content{
-  position: relative;
-  z-index: 1;
-  background: #3A2005;
-}
-
 .content-block{
   min-height: 30vh;
   display: flex;
@@ -100,6 +94,43 @@ video{
   background-image: url("../images/fruit-stand.jpg");
 }
 
-/* Make video parallax */
+.carousel{
+  position: relative;
+  margin: 1rem auto;
+  width: 90%;
+  height: 300px;
+  overflow-x: hidden;
+}
 
+.carousel-track{
+  display: flex;
+  height: 100%;
+  transition: transform 0.5s ease;
+}
+
+.carousel-card{
+  flex-shrink: 0;
+  width: 31.3%;
+  margin: 1%;
+  background: blue;
+}
+
+.carousel-btn{
+  position: absolute;
+  top: 42%;
+  background: none;
+  padding: 1rem;
+  border: none;
+  font-size: 1.5rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.carousel-btn.left{
+  left: 0;
+}
+
+.carousel-btn.right{
+  right: 0;
+}
 
