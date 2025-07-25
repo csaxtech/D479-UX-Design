@@ -27,7 +27,7 @@ function slideTo(index){
 function startAutoCycle(){
   carouselAutoInterval = setInterval(() => {
     slideTo(currentCarouselPos + 1);
-  }, 3000)
+  }, 4000)
 }
 
 function stopAutoCycle(){

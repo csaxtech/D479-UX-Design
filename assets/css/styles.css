@@ -5,20 +5,26 @@
   box-sizing: border-box;
 }
 
-body{
+body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-h1{
+h1 {
   font-family: "Allison", cursive;
   font-weight: 600;
 }
 
-h2{
+h2 {
   font-family: "Tangerine", cursive;
   font-weight: normal;
   font-size: 6rem;
   margin: 1rem 1rem 0rem;
+}
+
+h3 {
+  font-family: "Tangerine", cursive;
+  font-weight: bold;
+  font-size: 5rem;
 }
 
 p {
@@ -29,7 +35,7 @@ p {
 }
 
 /* Make video background */
-video{
+video {
   position: fixed;
   top: 0;
   left: 0;
@@ -51,7 +57,7 @@ video{
   top: 15%;
 }
 
-.hero-message > h1{
+.hero-message>h1 {
   /* Font Stuff */
   text-align: center;
   color: #3A2005;
@@ -59,10 +65,10 @@ video{
   font-size: 12rem;
 
   /* Glow for visibility */
-  text-shadow: 0 0 10px  #ECE3D4;
+  text-shadow: 0 0 10px #ECE3D4;
 }
 
-.content-block{
+.content-block {
   min-height: 30vh;
   display: flex;
   flex-direction: column;
@@ -73,7 +79,7 @@ video{
   z-index: 1;
 }
 
-.parallax-img{
+.parallax-img {
   height: 70vh;
   background-attachment: fixed;
   background-position: center;
@@ -82,55 +88,82 @@ video{
   z-index: 0;
 }
 
-.parallax-img.volcano{
+.parallax-img.volcano {
   background-image: url("../images/volcano-night.jpg");
 }
 
-.parallax-img.beach{
+.parallax-img.beach {
   background-image: url("../images/beach.jpg");
 }
 
-.parallax-img.market{
+.parallax-img.market {
   background-image: url("../images/fruit-stand.jpg");
 }
 
-.carousel{
+.carousel {
   position: relative;
   margin: 1rem auto;
-  width: 90%;
-  height: 300px;
+  width: 80%;
   overflow-x: hidden;
 }
 
-.carousel-track{
+.carousel-track {
   display: flex;
   height: 100%;
   transition: transform 0.5s ease;
 }
 
-.carousel-card{
+.carousel-card {
+  position: relative;
   flex-shrink: 0;
   width: 31.3%;
   margin: 1%;
-  background: blue;
 }
 
-.carousel-btn{
+.carousel-card img {
+  width: 100%;
+  height: auto;
+}
+
+.carousel-card .heading-block {
   position: absolute;
-  top: 42%;
-  background: none;
-  padding: 1rem;
-  border: none;
-  font-size: 1.5rem;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  background-color: rgba(236, 227, 212, 0.5);
+}
+
+.carousel-card h3 {
+  color: #3A2005;
+}
+
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  height: 30%;
+  width: 4%;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  font-size: 2rem;
   font-weight: bold;
+  background-color: rgba(18, 206, 188, 0.60);
+  color: rgba(0, 0, 0, 0.7);
   cursor: pointer;
+  transform: translateY(-50%);
+  transition: transform 0.05s ease;
 }
 
-.carousel-btn.left{
-  left: 0;
+.carousel-btn.left {
+  left: 2px;
 }
 
-.carousel-btn.right{
-  right: 0;
+.carousel-btn.right {
+  right: 2px;
 }
 
+.carousel-btn:hover {
+  transform: translateY(-50%) scale(1.1);
+}
+
+.carousel-btn:active {
+  transform: translateY(-50%) scale(1);
+}
