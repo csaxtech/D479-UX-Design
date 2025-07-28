@@ -5,6 +5,9 @@
   box-sizing: border-box;
 }
 
+
+
+/* Headings & Typography */
 body {
   font-family: Arial, Helvetica, sans-serif;
 }
@@ -32,6 +35,66 @@ p {
   text-align: center;
   margin: 1rem;
   font-size: 1.25rem;
+}
+
+
+
+/* Header & Nav  */
+.site-header {
+  position: fixed;
+  display: flex;
+  justify-content: stretch;
+  height: 10vh;
+  width: 100%;
+  padding: 0.5rem 0.5rem 0;
+  transition: background-color 0.25s ease;
+  z-index: 2;
+}
+
+.logo {
+  display: flex;
+  flex-grow: 1;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  padding: 0.5rem;
+}
+
+.logo a {
+  color: #ECE3D4;
+}
+
+/* TopNav Stuff */
+.top-nav {
+  display: flex;
+  flex-grow: 9;
+  justify-content: center;
+  align-items: stretch;
+  /* Make buttons take full nav height */
+}
+
+.top-nav a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  padding: 1rem;
+  color: #ECE3D4;
+}
+
+/* Positional Awareness - What do I do for this? Underline, maybe? */
+a.current {
+  text-decoration: underline;
+}
+
+/* TopNav Micro-interactions */
+.top-nav a:hover {
+  background: #BDBDBD;
+  transform: scale(1.05);
+}
+
+.top-nav a:active {
+  transform: scale(1);
 }
 
 /* Make video background */

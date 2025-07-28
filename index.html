@@ -1,100 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Taniti</title>
   <link rel="stylesheet" href="assets/css/styles.css">
-  <script src="assets/js/scripts.js" defer></script> <!-- Defer to make scripts load after html, ensures page loads quickly. -->
-    <!-- For the Taniti font -->
+  <script type="module" src="assets/js/main.js"></script>
+  <!-- <script src="assets/js/scripts.js" defer></script> -->
+  <!-- For the Taniti font -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Allison&display=swap" rel="stylesheet">
-    <!-- For the headings font -->
+  <!-- For the headings font -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    <header class="site-header"></header>
-    
-    <section class="hero">
-      <div class="parallax">
-        <video autoplay loop muted>
-          <source src = "assets/videos/background-video.mp4" type="video/mp4">
-        </video>
-      </div>
-      <div class="hero-message">
-        <h1>Taniti</h1>
+  <!-- Logo & topnav -->
+  <header class="site-header">
+
+    <div class="logo">
+      <a href="index.html">
+        Logo
+        <img>
+      </a>
+    </div>
+
+    <nav class="top-nav">
+      <a href="index.html" class="current">Home</a>
+      <a href="planning.html">Plan Your Visit</a>
+      <a href="experiences.html">Experiences</a>
+    </nav>
+
+  </header>
+
+  <section class="hero">
+    <div class="parallax">
+      <video autoplay loop muted>
+        <source src="assets/videos/background-video.mp4" type="video/mp4">
+      </video>
+    </div>
+    <div class="hero-message">
+      <h1>Taniti</h1>
+    </div>
+  </section>
+
+  <main class="main-content">
+    <section class="content-block">
+      <h2>Small Island, Big Wonders</h2>
+      <p>Taniti is a small, tropical island in the Pacific. While the island has an area of less than 500 square miles,
+        the terrain is varied and includes both sandy and rocky beaches, a small but safe harbor, lush tropical
+        rainforests, and a mountainous interior that includes a small, active volcano. Taniti has an indigenous
+        population of about 20,000. Until a recent increase in tourism, most of the Tanitian economy was dominated by
+        fishing or agriculture.</p>
+    </section>
+
+    <div class="parallax-img volcano"></div>
+
+    <section class="content-block">
+      <h2>Remote Tropical Bliss</h2>
+      <p>Most people visit Taniti to enjoy the beaches, explore the rainforest, and to visit the volcano. However, there
+        are other things to do, including visiting a local history museum, going on chartered fishing tours, snorkeling,
+        zip-lining in the rainforest, visiting several pubs, including a microbrewery, dancing at a new dance club,
+        seeing a movie, taking helicopter rides, playing at an arcade, visiting art galleries, and bowling. Also, a
+        nine-hole golf course should be operational by next year. Many of these activities are located in Merriton
+        Landing, which is a rapidly developing area on the north side of Yellow Leaf Bay.</p>
+    </section>
+
+    <div class="parallax-img beach"></div>
+
+    <section class="content-block">
+      <h2>A Taste of the Tropics</h2>
+      <p>Restaurants: Taniti currently has 10 restaurants: five serve mostly local fish and rice, three serve
+        American-style meals, and two serve Pan-Asian cuisine.</p>
+      <p>Grocery Stores: Taniti has two supermarkets, two smaller grocery stores, and one convenience store that is open
+        24 hours a day.</p>
+    </section>
+
+    <div class="parallax-img market"></div>
+
+    <section class="content-block">
+      <div class="carousel">
+        <div class="carousel-track">
+          <div class="carousel-card">
+            <div class="heading-block">
+              <h3>Dining</h3>
+            </div>
+            <img src="assets/images/Carousel-Test.jpg">
+          </div>
+          <div class="carousel-card">
+            <div class="heading-block">
+              <h3>Dining</h3>
+            </div>
+            <img src="assets/images/Carousel-Test.jpg">
+          </div>
+          <div class="carousel-card">
+            <div class="heading-block">
+              <h3>Dining</h3>
+            </div>
+            <img src="assets/images/Carousel-Test.jpg">
+          </div>
+          <div class="carousel-card">
+            <div class="heading-block">
+              <h3>Dining</h3>
+            </div>
+            <img src="assets/images/Carousel-Test.jpg">
+          </div>
+          <div class="carousel-card">
+            <div class="heading-block">
+              <h3>Dining</h3>
+            </div>
+            <img src="assets/images/Carousel-Test.jpg">
+          </div>
+        </div>
+        <button class="carousel-btn left">&lt;</button>
+        <button class="carousel-btn right">&gt;</button>
       </div>
     </section>
 
-    <main class="main-content">
-      <section class="content-block">
-        <h2>Small Island, Big Wonders</h2>
-        <p>Taniti is a small, tropical island in the Pacific. While the island has an area of less than 500 square miles, the terrain is varied and includes both sandy and rocky beaches, a small but safe harbor, lush tropical rainforests, and a mountainous interior that includes a small, active volcano. Taniti has an indigenous population of about 20,000. Until a recent increase in tourism, most of the Tanitian economy was dominated by fishing or agriculture.</p>
-      </section>
+  </main>
 
-      <div class="parallax-img volcano"></div>
+  <footer class="site-footer">
 
-      <section class="content-block">
-        <h2>Remote Tropical Bliss</h2>
-        <p>Most people visit Taniti to enjoy the beaches, explore the rainforest, and to visit the volcano. However, there are other things to do, including visiting a local history museum, going on chartered fishing tours, snorkeling, zip-lining in the rainforest, visiting several pubs, including a microbrewery, dancing at a new dance club, seeing a movie, taking helicopter rides, playing at an arcade, visiting art galleries, and bowling. Also, a nine-hole golf course should be operational by next year. Many of these activities are located in Merriton Landing, which is a rapidly developing area on the north side of Yellow Leaf Bay.</p>
-      </section>
-
-      <div class="parallax-img beach"></div>
-
-      <section class="content-block">
-        <h2>A Taste of the Tropics</h2>
-        <p>Restaurants: Taniti currently has 10 restaurants: five serve mostly local fish and rice, three serve American-style meals, and two serve Pan-Asian cuisine.</p>
-        <p>Grocery Stores: Taniti has two supermarkets, two smaller grocery stores, and one convenience store that is open 24 hours a day.</p>
-      </section>
-
-      <div class="parallax-img market"></div>
-      
-      <section class="content-block">
-        <div class="carousel">
-          <div class="carousel-track">
-            <div class="carousel-card">
-              <div class="heading-block">
-                <h3>Dining</h3>
-              </div>
-              <img src="assets/images/Carousel-Test.jpg">
-            </div>
-            <div class="carousel-card">
-              <div class="heading-block">
-                <h3>Dining</h3>
-              </div>
-              <img src="assets/images/Carousel-Test.jpg">           
-            </div>
-            <div class="carousel-card">
-              <div class="heading-block">
-                <h3>Dining</h3>
-              </div>
-              <img src="assets/images/Carousel-Test.jpg">        
-            </div>
-            <div class="carousel-card">
-              <div class="heading-block">
-                <h3>Dining</h3>
-              </div>
-              <img src="assets/images/Carousel-Test.jpg">              
-            </div>
-            <div class="carousel-card">
-              <div class="heading-block">
-                <h3>Dining</h3>
-              </div>
-              <img src="assets/images/Carousel-Test.jpg">              
-            </div>
-          </div>
-          <button class="carousel-btn left">&lt;</button>
-          <button class="carousel-btn right">&gt;</button>
-        </div>
-      </section>
-
-    </main>
-
-    <footer class="site-footer">
-      
-    </footer>
+  </footer>
 </body>
+
 </html>
