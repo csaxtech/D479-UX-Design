@@ -19,11 +19,6 @@ export function initCarousel() {
     const cardWidth = getFullCardWidth();
     const maxIndex = carouselCards.length - (carouselCardsVisible - 1);
     index = index % maxIndex; // Use Modulo to calculate when to loop back.
-    /*
-    const maxIndex = carouselCards.length - carouselCardsVisible;
-    if (index < 0) index = maxIndex;
-    else if (index > maxIndex) index = 0;
-    */
     const slideDistance = index * cardWidth;
     carouselTrack.style.transform = `translateX(-${slideDistance}px)`;
     currentCarouselPos = index;
