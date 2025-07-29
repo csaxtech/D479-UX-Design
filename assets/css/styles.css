@@ -62,7 +62,7 @@ p {
   color: #ECE3D4;
 }
 
-/* TopNav Stuff */
+/* TopNav */
 .top-nav {
   display: flex;
   flex-grow: 1;
@@ -80,14 +80,15 @@ p {
   color: #ECE3D4;
 }
 
-/* Positional Awareness - What do I do for this? Underline, maybe? */
+/* Positional Awareness */
 a.current {
   text-decoration: underline;
 }
 
 /* TopNav Micro-interactions */
 .top-nav a:hover {
-  background: #BDBDBD;
+  /* FIXME: Is this the right color...?  */
+  background: #12CEBC;
   transform: scale(1.05);
 }
 
@@ -129,6 +130,9 @@ video {
   text-shadow: 0 0 10px #ECE3D4;
 }
 
+
+
+/* Alternating blocks of text + Parallax images */
 .content-block {
   min-height: 30vh;
   display: flex;
@@ -161,6 +165,9 @@ video {
   background-image: url("../images/fruit-stand.jpg");
 }
 
+
+
+/* Carousel */
 .carousel {
   position: relative;
   margin: 1rem auto;
@@ -206,7 +213,7 @@ video {
   border: 1px solid rgba(255, 255, 255, 0.6);
   font-size: 2rem;
   font-weight: bold;
-  background-color: rgba(18, 206, 188, 0.60);
+  background-color: rgba(18, 206, 188, 0.6);
   color: rgba(0, 0, 0, 0.7);
   cursor: pointer;
   transform: translateY(-50%);
@@ -221,10 +228,26 @@ video {
   right: 2px;
 }
 
+/* Carousel Micro-Interactions */
 .carousel-btn:hover {
   transform: translateY(-50%) scale(1.1);
 }
 
 .carousel-btn:active {
   transform: translateY(-50%) scale(1);
+}
+
+
+
+/* Footer */
+.site-footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 10vh;
+  background-color: #2E1604;
+}
+
+.copyright {
+  color: #ECE3D4;
 }
