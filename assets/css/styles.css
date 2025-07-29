@@ -96,7 +96,10 @@ a.current {
   transform: scale(1);
 }
 
-/* Make video background */
+
+
+
+/* Hero area w/ video background */
 video {
   position: fixed;
   top: 0;
@@ -132,6 +135,12 @@ video {
 
 
 
+/* Main */
+.main-content {
+  min-height: 90vh;
+  background: #2E1604;
+}
+
 /* Alternating blocks of text + Parallax images */
 .content-block {
   min-height: 30vh;
@@ -139,7 +148,6 @@ video {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: #2E1604;
   color: #ECE3D4;
   z-index: 1;
 }
@@ -193,12 +201,12 @@ video {
   height: auto;
 }
 
-.carousel-card .heading-block {
+.carousel-card .card-heading {
   position: absolute;
   bottom: 0;
   width: 100%;
   text-align: center;
-  background-color: rgba(236, 227, 212, 0.5);
+  background: rgba(236, 227, 212, 0.5);
 }
 
 .carousel-card h3 {
@@ -213,7 +221,7 @@ video {
   border: 1px solid rgba(255, 255, 255, 0.6);
   font-size: 2rem;
   font-weight: bold;
-  background-color: rgba(18, 206, 188, 0.6);
+  background: rgba(18, 206, 188, 0.6);
   color: rgba(0, 0, 0, 0.7);
   cursor: pointer;
   transform: translateY(-50%);
@@ -245,7 +253,7 @@ video {
   align-items: center;
   justify-content: center;
   height: 10vh;
-  background-color: #2E1604;
+  background: #2E1604;
 }
 
 .copyright {
