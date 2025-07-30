@@ -41,12 +41,17 @@ p {
 
 /* Header & Nav  */
 .site-header {
-  position: fixed;
   display: flex;
   justify-content: stretch;
   height: 10vh;
   width: 100%;
+  background: #2E1604;
+}
+
+.site-header.dynamic-bg {
+  position: fixed;
   transition: background-color 0.25s ease;
+  background: rgba(46, 22, 4, 0);
   z-index: 2;
 }
 

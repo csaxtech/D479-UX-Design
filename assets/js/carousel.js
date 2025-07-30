@@ -1,3 +1,9 @@
+// Script for carousel functionality. Takes a carousel object with
+// a carousel container, track, cards, and left/right buttons.
+// Carousel displays 3 cards and will auto-rotate every 3 seconds. 
+// Buttons pause rotation and will shift the track by one position,
+// then resume auto-rotate.
+
 export function initCarousel() {
   const carousel = document.querySelector('.carousel');
   const carouselTrack = carousel.querySelector('.carousel-track');
