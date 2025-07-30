@@ -12,9 +12,13 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+.logo a {
+  text-decoration: none;
+}
+
 h1 {
   font-family: "Allison", cursive;
-  font-weight: 600;
+  font-size: 4rem;
 }
 
 h2 {
@@ -27,7 +31,7 @@ h2 {
 h3 {
   font-family: "Tangerine", cursive;
   font-weight: bold;
-  font-size: 5rem;
+  font-size: 3rem;
 }
 
 p {
@@ -60,11 +64,20 @@ p {
   align-items: center;
   justify-content: center;
   text-decoration: none;
-  padding: 0.5rem;
+  padding: 0rem 1.5rem;
 }
 
 .logo a {
   color: #ECE3D4;
+  transition: transform 0.08s ease;
+}
+
+.logo a:hover {
+  transform: scale(1.2);
+}
+
+.logo a:active {
+  transform: scale(1);
 }
 
 /* TopNav */
@@ -81,8 +94,10 @@ p {
   align-items: center;
   justify-content: center;
   text-decoration: none;
-  padding: 1rem;
+  padding: 1rem 2rem;
   color: #ECE3D4;
+  font-size: 1.2rem;
+  transition: transform 0.08s ease;
 }
 
 /* Positional Awareness */
@@ -92,9 +107,7 @@ a.current {
 
 /* TopNav Micro-interactions */
 .top-nav a:hover {
-  /* FIXME: Is this the right color...?  */
-  background: #12CEBC;
-  transform: scale(1.05);
+  transform: scale(1.2);
 }
 
 .top-nav a:active {
@@ -202,8 +215,9 @@ video {
 }
 
 .carousel-card img {
+  display: block;
   width: 100%;
-  height: auto;
+  object-fit: cover;
 }
 
 .carousel-card .card-heading {
@@ -211,7 +225,7 @@ video {
   bottom: 0;
   width: 100%;
   text-align: center;
-  background: rgba(236, 227, 212, 0.5);
+  background: rgba(236, 227, 212, 0.6);
 }
 
 .carousel-card h3 {
