@@ -25,7 +25,7 @@ h2 {
   font-family: "Tangerine", cursive;
   font-weight: normal;
   font-size: 6rem;
-  margin: 1rem 1rem 0rem;
+  margin: 1rem 1rem 1rem;
 }
 
 h3 {
@@ -37,8 +37,8 @@ h3 {
 p {
   max-width: 80vw;
   text-align: center;
-  margin: 1rem;
-  font-size: 1.25rem;
+  margin: 0rem 1rem 1rem;
+  font-size: 1.2rem;
 }
 
 
@@ -193,6 +193,22 @@ video {
 
 .parallax-img.transportation {
   background-image: url("../images/parallax-transportation.jpg");
+}
+
+.parallax-img.lodging {
+  background-image: url("../images/parallax-lodging.jpg");
+}
+
+.parallax-img.faq {
+  background-image: url("../images/parallax-faq.jpg");
+}
+
+.parallax-img.dining {
+  background-image: url("../images/parallax-dining.jpg");
+}
+
+.parallax-img.entertainment {
+  background-image: url("../images/parallax-entertainment.jpg");
 }
 
 
