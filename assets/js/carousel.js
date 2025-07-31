@@ -53,5 +53,15 @@ export function initCarousel() {
     startAutoCycle();
   });
 
+  for (let i = 0; i < carouselCards.length; i++) {
+    carouselCards[i].addEventListener('mouseover', () => {
+      stopAutoCycle();
+    });
+
+    carouselCards[i].addEventListener('mouseout', () => {
+      startAutoCycle();
+    });
+  }
+
   startAutoCycle();
 }
