@@ -41,6 +41,10 @@ p {
   font-size: 1.2rem;
 }
 
+.strong {
+  font-weight: bold;
+}
+
 
 
 /* Header & Nav  */
@@ -69,7 +73,7 @@ p {
 
 .logo a {
   color: #ECE3D4;
-  transition: transform 0.08s ease;
+  transition: transform 0.15s ease;
 }
 
 .logo a:hover {
@@ -141,13 +145,12 @@ video {
 }
 
 .hero-message>h1 {
-  /* Font Stuff */
   text-align: center;
   color: #3A2005;
   font-style: normal;
   font-size: 12rem;
 
-  /* Glow for visibility */
+  /* Glow for enhanced visibility */
   text-shadow: 0 0 10px #ECE3D4;
 }
 
@@ -157,6 +160,12 @@ video {
 .main-content {
   min-height: 90vh;
   background: #2E1604;
+}
+
+ul {
+  max-width: 900px;
+  margin: 0 1rem 1rem;
+
 }
 
 /* Alternating blocks of text + Parallax images */
