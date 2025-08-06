@@ -122,7 +122,7 @@ a.current {
 
 
 /* Hero area w/ video background */
-video {
+.parallax-video {
   position: fixed;
   top: 0;
   left: 0;
@@ -152,6 +152,31 @@ video {
 
   /* Glow for enhanced visibility */
   text-shadow: 0 0 10px #ECE3D4;
+}
+
+/* Testing scroll cue fix - implement later */
+
+.scroll-cue {
+  position: absolute;
+  width: 3rem;
+  left: 50%;
+  bottom: 1rem;
+  transform: translateX(-50%);
+  animation: breathe-fade 2.5s ease-in-out infinite;
+}
+
+@keyframes breathe-fade {
+  0% {
+    opacity: 0.4;
+  }
+
+  50% {
+    opacity: 0.9;
+  }
+
+  100% {
+    opacity: 0.4;
+  }
 }
 
 
