@@ -1,3 +1,15 @@
+/* Configure header size so it can be used for offset */
+:root {
+  --header-height: 10vh;
+}
+
+html {
+  scroll-padding-top: var(--header-height);
+  scroll-snap-type: y proximity;
+}
+
+
+
 /* Reset base styles */
 * {
   margin: 0;
@@ -36,7 +48,7 @@ h3 {
 
 p {
   max-width: 80vw;
-  text-align: center;
+  text-align: left;
   margin: 0rem 1rem 1rem;
   font-size: 1.2rem;
 }
@@ -49,15 +61,15 @@ p {
 
 /* Header & Nav  */
 .site-header {
+  position: fixed;
   display: flex;
   justify-content: stretch;
-  height: 10vh;
+  height: var(--header-height);
   width: 100%;
   background: #2E1604;
 }
 
 .site-header.dynamic-bg {
-  position: fixed;
   transition: background-color 0.25s ease;
   background: rgba(46, 22, 4, 0);
   z-index: 2;
@@ -154,11 +166,10 @@ a.current {
   text-shadow: 0 0 10px #ECE3D4;
 }
 
-/* Testing scroll cue fix - implement later */
-
+/* Scroll Cue icon to indicate to users that they should scroll down. */
 .scroll-cue {
   position: absolute;
-  width: 3rem;
+  width: 2.7rem;
   left: 50%;
   bottom: 1rem;
   transform: translateX(-50%);
@@ -183,14 +194,13 @@ a.current {
 
 /* Main */
 .main-content {
+  padding-top: var(--header-height);
   min-height: 90vh;
   background: #2E1604;
 }
 
-ul {
-  max-width: 900px;
-  margin: 0 1rem 1rem;
-
+.main-content.below-hero {
+  padding-top: 0;
 }
 
 /* Alternating blocks of text + Parallax images */
@@ -202,6 +212,7 @@ ul {
   align-items: center;
   color: #ECE3D4;
   z-index: 1;
+  scroll-snap-align: start;
 }
 
 .parallax-img {
@@ -245,6 +256,10 @@ ul {
   background-image: url("../images/parallax-entertainment.jpg");
 }
 
+ul {
+  max-width: 900px;
+  margin: 0 1rem 1rem;
+}
 
 
 /* Carousel */
