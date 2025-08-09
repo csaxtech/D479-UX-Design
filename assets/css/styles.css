@@ -1,4 +1,4 @@
-/* Configure header size so it can be used for offset */
+/* Declare header size so it can be used for offset */
 :root {
   --header-height: 10vh;
 }
@@ -21,11 +21,13 @@ html {
 
 /* Headings & Typography */
 body {
+  color: #ECE3D4;
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.logo a {
+a {
   text-decoration: none;
+  color: #ECE3D4;
 }
 
 h1 {
@@ -59,7 +61,7 @@ p {
 
 
 
-/* Header & Nav  */
+/* Header w/ TopNav  */
 .site-header {
   position: fixed;
   display: flex;
@@ -84,7 +86,6 @@ p {
 }
 
 .logo a {
-  color: #ECE3D4;
   transition: transform 0.15s ease;
 }
 
@@ -111,7 +112,6 @@ p {
   justify-content: center;
   text-decoration: none;
   padding: 1rem 2rem;
-  color: #ECE3D4;
   font-size: 1.2rem;
   transition: transform 0.08s ease;
 }
@@ -151,7 +151,6 @@ a.current {
 }
 
 .hero-message {
-  /* Position below top */
   position: absolute;
   top: 15%;
 }
@@ -166,7 +165,7 @@ a.current {
   text-shadow: 0 0 10px #ECE3D4;
 }
 
-/* Scroll Cue icon to indicate to users that they should scroll down. */
+/* Scroll cue to indicate to users that they should scroll down. */
 .scroll-cue {
   position: absolute;
   width: 2.7rem;
@@ -210,7 +209,6 @@ a.current {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  color: #ECE3D4;
   z-index: 1;
   scroll-snap-align: start;
 }
@@ -260,6 +258,7 @@ ul {
   max-width: 900px;
   margin: 0 1rem 1rem;
 }
+
 
 
 /* Carousel */
@@ -348,15 +347,66 @@ ul {
 
 
 
-/* Footer */
+/* footer */
 .site-footer {
+  display: flex;
+  flex-direction: column;
+  background: #2E1604;
+  min-height: 7.5vh;
+}
+
+.footer-main {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 10vh;
-  background: #2E1604;
+  margin: 1rem 0;
 }
 
 .copyright {
-  color: #ECE3D4;
+  flex: 1;
+  text-align: center;
+  margin: 0;
+}
+
+/* Sources is an accordion. It is hidden by default. */
+.sources {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.75s ease;
+}
+
+.sources p {
+  justify-self: center;
+  margin: 0 0.5rem 1rem;
+  font-size: 12px;
+}
+
+/* sources-toggle is a checkbox input used to expand/hide Sources. */
+/* The checkbox is hidden to show + or - (depending on state) on sources-label instead. */
+#sources-toggle {
+  display: none;
+}
+
+.sources-label {
+  font-size: 1.2rem;
+}
+
+.sources-label::before {
+  content: "+ ";
+  font-weight: bold;
+}
+
+#sources-toggle:checked~.footer-main .sources-label::before {
+  content: "- ";
+  font-weight: bold;
+}
+
+#sources-toggle:checked~.sources {
+  max-height: 30vh;
+}
+
+.sources-label:hover {
+  transform: scale(1.05);
 }
